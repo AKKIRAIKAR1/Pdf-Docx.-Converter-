@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF-Docx Converter</title>
+  <link rel="stylesheet" href="PdfConvert.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>PDF-Docx Converter</h1>
+      <p>Convert files between PDF and DOCX formats easily!</p>
+    </header>
+
+    <main>
+      <div class="conversion-section">
+        <div class="file-input">
+          <label for="fileInput">Upload your file:</label>
+          <input type="file" id="fileInput" accept=".pdf, .docx">
+        </div>
+
+        <div class="conversion-options">
+          <label for="conversionType">Convert to:</label>
+          <select id="conversionType">
+            <option value="pdf">PDF</option>
+            <option value="docx">DOCX</option>
+          </select>
+        </div>
+
+        <button id="convertButton">Convert</button>
+        <a id="downloadLink" style="display:none;" download>Download Converted File</a>
+        <p id="outputMessage"></p>
+      </div>
+    </main>
+
+    <footer>
+      <button id="toggleDarkMode">Toggle Light/Dark Mode</button>
+      <p>© 2024 PDF-Docx Converter. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="PdfConvert.js"></script>
+</body>
+</html>

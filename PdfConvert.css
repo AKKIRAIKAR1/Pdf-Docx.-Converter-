@@ -1,0 +1,101 @@
+/* PdfConvert.css */
+
+/* Premium Dark Theme */
+:root {
+  --bg-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --button-bg: #ff6f61;
+  --button-text: #ffffff;
+  --input-bg: #333333;
+  --input-border: #555555;
+  --highlight-color: #ffcc00;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--highlight-color);
+}
+
+header p {
+  margin-bottom: 20px;
+  color: #bbbbbb;
+}
+
+.file-input, .conversion-options {
+  margin: 20px 0;
+}
+
+input[type="file"], select {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button, a {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+button:hover, a:hover {
+  background-color: #ff8a75;
+}
+
+#outputMessage {
+  margin-top: 20px;
+  font-style: italic;
+  color: var(--highlight-color);
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #777777;
+}
+
+footer button {
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
